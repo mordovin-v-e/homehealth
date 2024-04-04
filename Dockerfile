@@ -1,5 +1,5 @@
 # cache gradle dependencies
-FROM gradle:8.7.0 AS gradle_cache
+FROM gradle:8.7.0-jdk21-alpine AS gradle_cache
 WORKDIR /home/gradle/app
 ENV GRADLE_USER_HOME /cache
 COPY build.gradle.kts settings.gradle.kts ./
