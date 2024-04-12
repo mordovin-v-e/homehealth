@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: home-heath
+  name: home-health-deployment
   labels:
-    app: home-heath
+    app: home-health
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: home-heath
+      app: home-health
   template:
     metadata:
-      name: home-heath
+      name: home-health
       labels:
-        app: home-heath
+        app: home-health
     spec:
       containers:
         - name: home-heath
